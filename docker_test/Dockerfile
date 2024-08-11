@@ -2,7 +2,7 @@ FROM python:3.11-alpine
 
 RUN apk add --no-cache gcc musl-dev linux-headers
 
-WORKDIR /src
+WORKDIR /srcc
 
 COPY ./requirements.txt .
 RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
